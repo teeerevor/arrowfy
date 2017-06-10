@@ -5,18 +5,18 @@
     "version" : "1.1",
     "identifier": "com.jocelynlin.sketch.arrowfy",
     "commands": [
-	{
-	    "name" : "Arrowfy",
-	    "identifier" : "arrowfy",
-	    "shortcut" : "ctrl a",
-	    "script" : "script.cocoascript",
-	    "handler" : "createArrow"
-	}
+      {
+          "name" : "Arrowfy",
+          "identifier" : "arrowfy",
+          "shortcut" : "ctrl a",
+          "script" : "arrow.js",
+          "handler" : "onRun"
+      }
     ],
     "menu" : {
-	"isRoot": true,
-	"items": [
-	    "arrowfy"
-	]
+        "isRoot": true,
+        "items": [
+            "arrowfy"
+        ]
     }
 }
