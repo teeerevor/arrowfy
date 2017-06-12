@@ -107,13 +107,9 @@ var createArrowhead = function(layer, headPosition, headType, headScale) {
         step = scale*7;
     }
 
-    if (headPosition === 'end')
-        headPosition = length;
-    else
-        headPosition = 0;
-
-    var endPoint = path.pointOnPathAtLength(headPosition);
-    var linePoint = path.pointOnPathAtLength(length-step);
+    var position = headPosition == 'end' ? length : 0;
+    var endPoint = path.pointOnPathAtLength(position);
+    var linePoint = path.pointOnPathAtLength(headPosition == 'end' ? position-step : position+step);
     var angle = 360/(2*Math.PI) * (Math.atan2(linePoint.y - endPoint.y, linePoint.x - endPoint.x));
 
     //0 - triangle as arrowhead
