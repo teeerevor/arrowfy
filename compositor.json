@@ -1,0 +1,92 @@
+{
+  "name": "teeerevor/arrowfy",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "Arrowfy",
+  "branch": "",
+  "style": {
+    "name": "Future",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/BannerHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "\"Avenir Next\", Helvetica, sans-serif",
+    "heading": {
+      "fontWeight": 500,
+      "textTransform": "uppercase",
+      "letterSpacing": "0.2em"
+    },
+    "alternativeText": {
+      "textTransform": "uppercase",
+      "fontWeight": 400,
+      "letterSpacing": "0.2em",
+      "opacity": 0.75
+    },
+    "colors": {
+      "text": "#333",
+      "background": "#fff",
+      "primary": "#666",
+      "secondary": "#888",
+      "highlight": "#1f80ff",
+      "muted": "#f6f6f6",
+      "border": "#eee"
+    },
+    "layout": {
+      "centered": true,
+      "maxWidth": 1024,
+      "bannerHeight": "80vh"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/teeerevor/arrowfy",
+          "text": "GitHub"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "arrowfy",
+      "subhead": null,
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "arrowfy: ",
+          "url": null
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "teeerevor",
+          "repo": "arrowfy"
+        }
+      ]
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "\n<p>This plugin adds simple solid arrowheads to any line, sized and colored to match path style.\n<img src=\"https://github.com/joclin/arrowfy/blob/master/arrowfy_scrnshot.png\"></p>\n<h2>Installation</h2>\n<p>Double-click on .sketchplugin file.</p>\n<h2>Usage</h2>\n<p>Select one or multiple paths, then hit CTRL-a to add auto-styled\narrowheads.</p>\n<p>##v1.1\nUpdate makes this work for Sketch v39. Also fixes shortcut mapping.</p>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/teeerevor/arrowfy",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/teeerevor",
+          "text": "teeerevor"
+        }
+      ]
+    }
+  ]
+}
